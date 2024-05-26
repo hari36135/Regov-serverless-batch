@@ -1,6 +1,5 @@
-Got it, let me rephrase it accordingly:
 
-Team,
+Hi Team,
 
 I've developed the following resources using Terraform, based on the architecture outlined below:
 
