@@ -8,7 +8,7 @@ In this solution, I've used a straightforward Python application for batch proce
 ![image](https://github.com/hari36135/Regov-serverless-batch/assets/58912507/7af4b26a-da94-443d-a7a6-11ba543f2af1)
 
 
-Architecture Overview:
+**Architecture Overview:**
 
 The architecture consists of two primary components: Code Pipeline and Serverless Batch.
 
@@ -112,8 +112,7 @@ Codepipeline-Fargate-batch
 #### Step 1: Clone this repository.
 
 ```shell
-git@github.com:aws-samples/aws-codepipeline-terraform-cicd-samples.git
-```
+https://github.com/hari36135/Regov-serverless-batch.git```
 
 
 #### Step 2: Update the variables in `execute/executables/terraform.tfvars` based on your requirement. Make sure you ae updating the variables project_name, environment, source_repo_name, source_repo_branch, create_new_repo, stage_input and build_projects.
