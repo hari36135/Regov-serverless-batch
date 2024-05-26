@@ -14,7 +14,7 @@ The architecture consists of two primary components: Code Pipeline and Serverles
 
 1. **Code Pipeline:** Upon a developer's code push to CodeCommit, the pipeline automatically initiates. It's responsible for building the Docker image and pushing it to the Elastic Container Registry (ECR).
 
-2. **Serverless Batch:** To address our specific needs, I've defined the batch process using the Docker image mentioned earlier. Additionally, I've configured job queues and an EventBridge to trigger these jobs at defined intervals. Upon triggering, the batch job copies contents from the source bucket to the destination bucket.
+2. **Serverless Batch:** To address our specific needs, I've defined the batch process using the Docker image mentioned earlier. Additionally, I've configured job queues and an EventBridge to trigger these jobs at defined intervals (5 minute). Upon triggering, the batch job copies contents from the source bucket to the destination bucket.
 
 This design encapsulates our solution, ensuring efficient batch processing as per our requirements. Let me know if you need further clarification or details!
 
