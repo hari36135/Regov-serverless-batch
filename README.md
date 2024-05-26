@@ -5,6 +5,9 @@ I've developed the following resources using Terraform, based on the architectur
 
 In this solution, I've used a straightforward Python application for batch processing. The source code for this application is available in the `src` directory.
 
+![image](https://github.com/hari36135/Regov-serverless-batch/assets/58912507/7af4b26a-da94-443d-a7a6-11ba543f2af1)
+
+
 Architecture Overview:
 
 The architecture consists of two primary components: Code Pipeline and Serverless Batch.
