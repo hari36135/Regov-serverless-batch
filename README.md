@@ -18,13 +18,10 @@ The architecture consists of two primary components: Code Pipeline and Serverles
 
 This design encapsulates our solution, ensuring efficient batch processing as per our requirements. Let me know if you need further clarification or details!
 
-### What can be improved in this solution:
+### What can be improved in my solution:
 
-1. **Streamline the IAM role to least privilege:**
-   - Review the permissions granted to the IAM role and ensure that it follows the principle of least privilege. Remove any unnecessary permissions to minimize the risk of unauthorized access.
-
-2. **Ensure Application uses IAM role (Current app is using hardcoded credentials):**
-   - Update the application code to utilize IAM roles for accessing AWS services instead of hardcoded credentials. This enhances security and simplifies credential management by leveraging AWS Identity and Access Management (IAM) features.
+1. **Ensure Application uses IAM role (Current app is using hardcoded credentials):**
+   - Update the application code to utilize IAM roles for accessing AWS services instead of hardcoded credentials. This enhances security and simplifies credential management by leveraging AWS Identity and Access Management (IAM) features. (due to insufficient time unable to modify the app behavior)
 
 
 ## Directory Structure
@@ -111,11 +108,10 @@ Codepipeline-Fargate-batch
 
 #### Step 1: Clone this repository.
 
-```shell
 https://github.com/hari36135/Regov-serverless-batch.git```
 
 
-#### Step 2: Update the variables in `execute/executables/terraform.tfvars` based on your requirement. Make sure you ae updating the variables project_name, environment, source_repo_name, source_repo_branch, create_new_repo, stage_input and build_projects.
+#### Step 2: Update the variables in `execute/executables/terraform.tfvars` based on your requirement. Ensure you update the variables project_name, environment, source_repo_name, source_repo_branch, create_new_repo, stage_input and build_projects.
 
 - If you are planning to use an existing terraform CodeCommit repository, then update the variable create_new_repo as false and provide the name of your existing repo under the variable source_repo_name
 - If you are planning to create new terraform CodeCommit repository, then update the variable create_new_repo as true and provide the name of your new repo under the variable source_repo_name
